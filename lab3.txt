@@ -1,0 +1,52 @@
+Answers to Lab 3:
+
+1) Caleb Potter, Gonzalo Rodriguez-Vila, Ryan Wilks. 
+
+2) pass
+
+3) ferry
+
+4) The program takes 1m30.463s to run.
+
+5)  2 threads = 45.096s
+    4 threads = 22.888s
+    8 threads = 12.909s
+    13 threads = 6.759s
+    26 threads = 8.352s
+
+6)  The number of hashes is 26^5 + 26^4 + 26^3 + 26^2 + 26 = 12356630. 
+    
+    2 threads = 274007.229
+    4 threads = 539873.7329
+    8 threads = 957210.4733
+    13 threads = 1828174.2861
+    26 threads = 641358.9559
+
+7)  It pretty much does. However, this is not true for 26 threads (probably the CPU does not have that many cores).
+    This relates to the way the program was created because it splits up the alphabet between the available threads. 
+
+8) 1828174.2861 for 13 threads.
+
+9)  keyspace is 1 = 26
+    keyspace is 2 = 26^2 + 26
+    keyspace is 3 = 26^3 + 26^2 + 26
+    keyspace is 4 = 26^4 + 26^3 + 26^2 + 26
+    keyspace is 5 = 26^5 + 26^4 + 26^3 + 26^2 + 26
+    keyspace is 6 = 26^6 + 26^5 + 26^4 + 26^3 + 26^2 + 26
+    keyspace is 7 = 26^7 + 26^6 + 26^5 + 26^4 + 26^3 + 26^2 + 26
+    keyspace is 8 = 26^8 + 26^7 + 26^6 + 26^5 + 26^4 + 26^3 + 26^2 + 26
+
+10) Because the longer your password is, the more combinations there are to check. It will make the program take longer to crack it. 
+
+11) 207^6 + 207^5 + 207^4 + 207^3 + 207^2 + 207 = 43242182.1347s = 12011.7172h = 500 days.
+
+12) When running with 26 threads, it takes longer than 13 threads. 
+
+13) 
+    Exercise 1: salts, NO MATCH, salts, salts, salts,  donot, NO MATCH, anyyy, salts.
+
+    Exercise 2: With different salts we can get different hashes, even if two passwords are the same. 
+
+    Exercise 3: not attempted. 
+
+
